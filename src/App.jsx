@@ -12,8 +12,11 @@ import About from './pages/About'
 import Courses from './pages/Courses'
 
 function App() {
+  // Base path for GitHub Pages - must match your repository name
+  const basename = '/College-Portal'
+  
   return (
-    <Router>
+    <Router basename={basename}>
       <div className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">
