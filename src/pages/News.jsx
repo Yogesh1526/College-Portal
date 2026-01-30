@@ -1,4 +1,5 @@
 import { Calendar, User, ArrowRight } from 'lucide-react'
+import { getImagePath } from '../utils/getImagePath'
 
 const News = () => {
   const news = [
@@ -121,7 +122,7 @@ const News = () => {
               <div className="card mb-8 overflow-hidden">
                 <div className="relative h-64 mb-6 overflow-hidden">
                   <img 
-                    src={featuredNews.image} 
+                    src={getImagePath(featuredNews.image)} 
                     alt={featuredNews.title}
                     className="w-full h-full object-cover"
                     loading="eager"
@@ -168,7 +169,7 @@ const News = () => {
                   <div className="flex flex-col md:flex-row gap-4">
                     <div className="md:w-48 h-32 rounded-lg flex-shrink-0 overflow-hidden">
                       <img 
-                        src={item.image} 
+                        src={getImagePath(item.image)} 
                         alt={item.title}
                         className="w-full h-full object-cover"
                         loading="lazy"

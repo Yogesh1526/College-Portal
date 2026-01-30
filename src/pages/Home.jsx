@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Calendar, BookOpen, Trophy, FileText, Bell, Users, Award, GraduationCap } from 'lucide-react'
+import { getImagePath } from '../utils/getImagePath'
 
 const Home = () => {
   const features = [
@@ -60,7 +61,7 @@ const Home = () => {
       <section className="relative bg-gradient-to-r from-primary-600 to-primary-800 text-white py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0 opacity-30">
           <img 
-            src="/images/College students.jpg"
+            src={getImagePath('/images/College students.jpg')}
             alt="College students"
             className="w-full h-full object-cover"
             loading="eager"

@@ -1,4 +1,5 @@
 import { GraduationCap, Users, Award, Target, Heart, Lightbulb } from 'lucide-react'
+import { getImagePath } from '../utils/getImagePath'
 
 const About = () => {
   const values = [
@@ -49,7 +50,7 @@ const About = () => {
       <section className="relative bg-gradient-to-r from-primary-600 to-primary-800 text-white py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <img 
-            src="/images/Overseas-Education-Counselling-600x401.jpg"
+            src={getImagePath('/images/Overseas-Education-Counselling-600x401.jpg')}
             alt="College campus"
             className="w-full h-full object-cover"
             loading="eager"
